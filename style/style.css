@@ -1,27 +1,57 @@
-.hero {
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family:Chillax ;
+    src: url(./fonts/OTF/Chillax-Semibold.otf);
+}
+
+header{
     background-color: #2c3e50;
+    padding: 30px 70px;
+    position: relative;
+}
+.links {
+    position: absolute;
+    right: 70px;
+    top: 30px;
+}
+header h3 {
     color: white;
-    text-align: center;
-    padding: 50px;
-
-}
-.hero h2 {
-    position: relative;
-    width: 150px;
-    margin-left: 20px;
+    font-size: 25px;
+    @font-face {
+        font-family: Chillax-Semibold;
+        src: url();
+    }
 }
 
-.hero a {
-    float: right;
-    position: relative;
-    width: 150px;
-    margin-right: 10px;
-    color: white
+.links a{
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
 }
-.gaba {
+
+
+.hero {
     background-color: #1abc9c;
-    text-align: center;
-    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.hero img{
+    margin-bottom: 30px;
+}
+
+#starr{
+    width: 15%;
 }
 
 h1 {
@@ -33,28 +63,46 @@ h1 {
 }
 .port {
     text-align: center;
+    margin-bottom: 40px;
+}
+
+.port h2{
     font-size: 35px;
-    padding-bottom: 100px;
+    margin-top: 40px;
+    margin-bottom: 39px;
+}
+
+.port img{
+    width: 15%;
 }
 .counter {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
+
 .counter img {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
+    width: 25%;
+    border-radius: 10px;
+    margin:20px;
 }
 .abhawuti {
     text-align: center;
     background-color: #1abc9c;
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
+    position: relative;
 }
 .nezveyi {
     font-size: 35px;
     color: white;
+}
+
+.abhawuti img{
+    width: 15%;
+    margin: 30px;
 }
 .rondedzero {
         display: grid;
@@ -65,39 +113,43 @@ h1 {
 button {
     height: 50px;
     width: 150px;
-    padding: auto;
-    border-radius: 5%;
+    margin: 45px;
+    border-radius: 5%; 
     color: white;
     background-color: #1abc9c;
     border-color: white;
+    position: absolute;
+    left: 12%;
 }
 
 .numeri {
     text-align: center;
+    margin-top: 30px;
+    padding-bottom: 50px;
+}
+
+.numeri img{
+    width: 15%;
+    margin-top: 30px;
+    position: relative;
 }
 
 .nhambazi {
     text-align: inherit;
 }
-.nhambazi input {
+.nhambazi input, textarea {
     border-top: 0px;
     border-right: 0px;
     border-left: 0px;
+    border-bottom: 1px solid black;
     height: 20px;
-    width: 65%;
+    width: 50%;
     margin-bottom: 50px;
     margin-top: 50px;
     font-size: 20px;
     opacity: 0.5;
 }
-.nhambazi textarea {
-    width: 65%;
-    border-top: 0px;
-    border-right: 0px;
-    border-left: 0px;
-    font-size: 20px;
-    margin-bottom: 40px;
-}
+
 .nhambazi button {
     background-color: #1abc9c;
     color: white;
@@ -105,9 +157,10 @@ button {
     width: 80px;
     border-radius: 15%;
     border-color: white;
-    position: initial;
+    position: absolute;
+    left: 21%;
 }
-.futa {
+.footer {
     background-color: #2c3e50;
     display: flex;
     flex-direction: row;
@@ -116,6 +169,7 @@ button {
     color: white;
     margin-top: 50px;
     height: 45vh;
+    position: relative;
 
 }
 
@@ -129,14 +183,41 @@ button {
 .middle{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-content: center;
 
-    imoji {
-        width: 35px; height: 35px;
-        background-color: #2c3e50;
-        border-color: white;
+}
+
+.middle .imoji{
+        width: 40px; height: 40px;
+        background-color:#2c3e50;color: white;border-color: white ;border: 2px solid;
+        margin: 4px;
+        margin-top: 6px;
         border-radius: 100%;
-    }
+    
+}
+
+.imoji img{
+    width: 25px;
+    height: 25px;
+    padding-top: 12px;
+    padding-left: 10px;
+}
+
+#world{
+    position: absolute;
+    top: 90px;
+    
+
+}
+
+#lancer{
+    position: absolute;
+    top: 90px;
+}
+
+#cat{
+    position: absolute;
+    top: 90px;
 }
 
